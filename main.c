@@ -6,7 +6,7 @@ int main(void) {
 int codigo,qtd;
 float productv, valornota , discount, valorfinalnota;
 
-printf("código do produto?\n");
+printf("cÃ³digo do produto?\n");
 
 scanf ("%d",&codigo);
 
@@ -35,20 +35,20 @@ if (codigo>=3 && codigo<=40){
 printf ("Valor da nota sem desconto:\n",valornota);
 
 if (valornota<250){
-    discount=valornota*0.05;
+    discount=valornota*0.05 - valornota;
 
         if (valornota<=500)
-       discount=valornota * 0.1;
+       discount=valornota * 0.1 - valornota;
 
 
 else
-       discount=valornota * 0.15;
+       discount=valornota * 0.15 - valornota;
 
 }
 
- valorfinalnota = valornota - discount;
-printf ("Valor do desconto é:\n",discount);
-printf ("Valor da nota é: \n",valorfinalnota);
+
+printf ("Valor da nota com desconto Ã©:\n",discount);
+printf ("Valor da nota Ã©: \n",valornota);
 }
 
 
